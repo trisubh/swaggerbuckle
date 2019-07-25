@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Saurabh.Tripathi\Desktop\Swashbuckle.Core.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B56F38C5-F352-4431-BB1D-E564577F0D6B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Swashbuckle.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Swashbuckle</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\HttpRouteDirectionConstraint.cs" />
+    <Compile Include="Application\VendorExtensionsConverter.cs" />
+    <Compile Include="Application\RedirectHandler.cs" />
+    <Compile Include="Application\SecuritySchemeBuilder.cs" />
+    <Compile Include="Application\BasicAuthSchemeBuilder.cs" />
+    <Compile Include="Application\ApiKeySchemeBuilder.cs" />
+    <Compile Include="Application\OAuth2SchemeBuilder.cs" />
+    <Compile Include="Application\SwaggerUiConfig.cs" />
+    <Compile Include="Application\DocExpansion.cs" />
+    <Compile Include="Application\SwaggerUiHandler.cs" />
+    <Compile Include="Application\SwaggerDocsHandler.cs" />
+    <Compile Include="Application\VersionInfoBuilder.cs" />
+    <Compile Include="Application\LicenseBuilder.cs" />
+    <Compile Include="Application\ContactBuilder.cs" />
+    <Compile Include="Application\InfoBuilder.cs" />
+    <Compile Include="Application\SwaggerDocsConfig.cs" />
+    <Compile Include="Application\HttpConfigurationExtensions.cs" />
+    <Compile Include="Application\SwaggerEnabledConfiguration.cs" />
+    <Compile Include="Swagger\IOperationFilter.cs" />
+    <Compile Include="Swagger\ISchemaFilter.cs" />
+    <Compile Include="Swagger\IModelFilter.cs" />
+    <Compile Include="Swagger\ModelFilterContext.cs" />
+    <Compile Include="Swagger\StringExtensions.cs" />
+    <Compile Include="Swagger\TypeExtensions.cs" />
+    <Compile Include="Swagger\JsonContractExtensions.cs" />
+    <Compile Include="Swagger\JsonPropertyExtensions.cs" />
+    <Compile Include="Swagger\ApiDescriptionExtensions.cs" />
+    <Compile Include="Swagger\IDocumentFilter.cs" />
+    <Compile Include="Swagger\SchemaExtensions.cs" />
+    <Compile Include="Swagger\SchemaRegistry.cs" />
+    <Compile Include="Swagger\ISwaggerProvider.cs" />
+    <Compile Include="Swagger\SwaggerGenerator.cs" />
+    <Compile Include="Swagger\SwaggerGeneratorOptions.cs" />
+    <Compile Include="Swagger\UnknownApiVersion.cs" />
+    <Compile Include="Swagger\SwaggerDocument.cs" />
+    <Compile Include="Swagger\Info.cs" />
+    <Compile Include="Swagger\Contact.cs" />
+    <Compile Include="Swagger\License.cs" />
+    <Compile Include="Swagger\PathItem.cs" />
+    <Compile Include="Swagger\Operation.cs" />
+    <Compile Include="Swagger\Tag.cs" />
+    <Compile Include="Swagger\ExternalDocs.cs" />
+    <Compile Include="Swagger\PartialSchema.cs" />
+    <Compile Include="Swagger\Parameter.cs" />
+    <Compile Include="Swagger\Schema.cs" />
+    <Compile Include="Swagger\Response.cs" />
+    <Compile Include="Swagger\Header.cs" />
+    <Compile Include="Swagger\Xml.cs" />
+    <Compile Include="Swagger\SecurityScheme.cs" />
+    <Compile Include="Swagger\Annotations\ApplySwaggerOperationAttributes.cs" />
+    <Compile Include="Swagger\Annotations\ApplySwaggerSchemaFilterAttributes.cs" />
+    <Compile Include="Swagger\Annotations\ApplySwaggerOperationFilterAttributes.cs" />
+    <Compile Include="Swagger\Annotations\SwaggerOperationAttribute.cs" />
+    <Compile Include="Swagger\Annotations\SwaggerSchemaFilterAttribute.cs" />
+    <Compile Include="Swagger\Annotations\SwaggerOperationFilterAttribute.cs" />
+    <Compile Include="Swagger\Annotations\SwaggerResponseRemoveDefaultsAttribute.cs" />
+    <Compile Include="Swagger\Annotations\SwaggerResponseAttribute.cs" />
+    <Compile Include="Swagger\Annotations\ApplySwaggerResponseAttributes.cs" />
+    <Compile Include="Swagger\XmlComments\XmlCommentsIdHelper.cs" />
+    <Compile Include="Swagger\XmlComments\ApplyXmlTypeComments.cs" />
+    <Compile Include="Swagger\XmlComments\ApplyXmlActionComments.cs" />
+    <Compile Include="Swagger\XmlComments\XmlTextHelper.cs" />
+    <Compile Include="Swagger\XmlComments\XPathNavigatorExtensions.cs" />
+    <Compile Include="Swagger\FromUriParams\HandleFromUriParams.cs" />
+    <Compile Include="SwaggerUi\EmbeddedAssetDescriptor.cs" />
+    <Compile Include="SwaggerUi\IAssetProvider.cs" />
+    <Compile Include="SwaggerUi\EmbeddedAssetProvider.cs" />
+    <Compile Include="SwaggerUi\Asset.cs" />
+    <Compile Include="SwaggerUi\AssetNotFound.cs" />
+    <Compile Include="SwaggerUi\StreamExtensions.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="css\print.css" />
+    <EmbeddedResource Include="css\reset.css" />
+    <EmbeddedResource Include="css\screen.css" />
+    <EmbeddedResource Include="css\style.css" />
+    <EmbeddedResource Include="css\typography.css" />
+    <EmbeddedResource Include="fonts\DroidSans.ttf" />
+    <EmbeddedResource Include="fonts\DroidSans-Bold.ttf" />
+    <EmbeddedResource Include="images\collapse.gif" />
+    <EmbeddedResource Include="images\expand.gif" />
+    <EmbeddedResource Include="images\explorer_icons.png" />
+    <EmbeddedResource Include="images\favicon.ico" />
+    <EmbeddedResource Include="images\favicon-16x16.png" />
+    <EmbeddedResource Include="images\favicon-32x32.png" />
+    <EmbeddedResource Include="images\logo_small.png" />
+    <EmbeddedResource Include="images\pet_store_api.png" />
+    <EmbeddedResource Include="images\throbber.gif" />
+    <EmbeddedResource Include="images\wordnik_api.png" />
+    <EmbeddedResource Include="index.html" />
+    <EmbeddedResource Include="lang\ca.js" />
+    <EmbeddedResource Include="lang\el.js" />
+    <EmbeddedResource Include="lang\en.js" />
+    <EmbeddedResource Include="lang\es.js" />
+    <EmbeddedResource Include="lang\fr.js" />
+    <EmbeddedResource Include="lang\geo.js" />
+    <EmbeddedResource Include="lang\it.js" />
+    <EmbeddedResource Include="lang\ja.js" />
+    <EmbeddedResource Include="lang\ko-kr.js" />
+    <EmbeddedResource Include="lang\pl.js" />
+    <EmbeddedResource Include="lang\pt.js" />
+    <EmbeddedResource Include="lang\ru.js" />
+    <EmbeddedResource Include="lang\tr.js" />
+    <EmbeddedResource Include="lang\translator.js" />
+    <EmbeddedResource Include="lang\zh-cn.js" />
+    <EmbeddedResource Include="lib\backbone-min.js" />
+    <EmbeddedResource Include="lib\es5-shim.js" />
+    <EmbeddedResource Include="lib\handlebars-4.0.5.js" />
+    <EmbeddedResource Include="lib\highlight.9.1.0.pack.js" />
+    <EmbeddedResource Include="lib\highlight.9.1.0.pack_extended.js" />
+    <EmbeddedResource Include="lib\jquery.ba-bbq.min.js" />
+    <EmbeddedResource Include="lib\jquery.slideto.min.js" />
+    <EmbeddedResource Include="lib\jquery.wiggle.min.js" />
+    <EmbeddedResource Include="lib\jquery-1.8.0.min.js" />
+    <EmbeddedResource Include="lib\jsoneditor.min.js" />
+    <EmbeddedResource Include="lib\js-yaml.min.js" />
+    <EmbeddedResource Include="lib\lodash.min.js" />
+    <EmbeddedResource Include="lib\marked.js" />
+    <EmbeddedResource Include="lib\object-assign-pollyfill.js" />
+    <EmbeddedResource Include="lib\sanitize-html.min.js" />
+    <EmbeddedResource Include="lib\swagger-oauth.js" />
+    <EmbeddedResource Include="o2c.html" />
+    <EmbeddedResource Include="swagger-ui.js" />
+    <EmbeddedResource Include="SwaggerUi\CustomAssets\discoveryUrlSelector.js" />
+    <EmbeddedResource Include="SwaggerUi\CustomAssets\index.html" />
+    <EmbeddedResource Include="SwaggerUi\CustomAssets\screen.css" />
+    <EmbeddedResource Include="SwaggerUi\CustomAssets\typography.css" />
+    <EmbeddedResource Include="swagger-ui\min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
