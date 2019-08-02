@@ -1,0 +1,2 @@
+D:\sbuckle\Swashbuckle.Core\obj\Debug\Swashbuckle.Core.csprojAssemblyReference.cache
+D:\sbuckle\Swashbuckle.Core\obj\Debug\Swashbuckle.Core.csproj.CoreCompileInputs.cache
